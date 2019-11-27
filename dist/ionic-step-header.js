@@ -19,8 +19,7 @@ var IonicStepHeaderComponent = (function () {
                     template: "\n<div class=\"ionic-step-header-icon\"\n     [class.ionic-step-header-icon-error]=\"isError\"\n     [class.ionic-step-header-icon-active]=\"active\">\n    <span class=\"ionic-step-header-icon-number\" *ngIf=\"(icon === 'number' && status === ''); else ionIcon\">{{index + 1}}</span>\n    <ng-template #ionIcon><ion-icon [name]=\"!isError ? icon : errorIcon\"></ion-icon></ng-template>\n</div>\n<div class=\"ionic-step-header-text-container\" [class.mt]=\"description\">\n  <div class=\"ionic-step-header-label\"\n       [class.ionic-step-header-label-error]=\"isError\"\n       [class.ionic-step-header-label-active]=\"active\">{{label}}</div>\n  <div class=\"ionic-step-header-description\" [class.ionic-step-header-description-error]=\"isError\" *ngIf=\"description\">\n    <span>{{description}}</span>\n  </div>\n</div>\n  ",
                     host: {
                         '[class.ionic-step-header-status-error]': 'isError'
-                    },
-                    styleUrls: ['./ionic-step-header.scss']
+                    }
                 },] },
     ];
     /** @nocollapse */

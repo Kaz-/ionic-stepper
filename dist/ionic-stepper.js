@@ -67,7 +67,6 @@ var IonicStepperComponent = (function () {
                         ionic_stepper_animations_1.IonicStepperAnimations.verticalStepTransition,
                         ionic_stepper_animations_1.IonicStepperAnimations.horizontalStepTransition,
                     ],
-                    styleUrls: ['./ionic-stepper.scss']
                 },] },
     ];
     /** @nocollapse */
