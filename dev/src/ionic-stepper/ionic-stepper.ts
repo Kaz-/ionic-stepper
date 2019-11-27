@@ -27,7 +27,8 @@ export type StepContentPositionState = ('next' | 'previous' | 'current');
                              [errorIcon]="step.errorIcon"
                              [label]="step.label"
                              [status]="step.status"
-                             [active]="i <= selectedIndex">
+                             [active]="i <= selectedIndex"
+                             (click)="setStep(i)">
           </ion-step-header>
           <div *ngIf="!isLast" class="ionic-stepper-horizontal-line"></div>
       </ng-container>
@@ -75,7 +76,7 @@ export type StepContentPositionState = ('next' | 'previous' | 'current');
     IonicStepperAnimations.verticalStepTransition,
     IonicStepperAnimations.horizontalStepTransition,
   ],
-  styleUrls: ['./ionic-stepper.scss']
+  // styleUrls: ['./ionic-stepper.scss']
 })
 export class IonicStepperComponent implements OnInit {
   disabled: boolean;
