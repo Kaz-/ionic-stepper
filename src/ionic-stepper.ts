@@ -53,7 +53,8 @@ export type StepContentPositionState = ('next' | 'previous' | 'current');
                            [label]="step.label"
                            [status]="step.status"
                            [active]="i <= selectedIndex"
-                           [description]="step.description">
+                           [description]="step.description"
+                           (click)="setStep(i)">
         </ion-step-header>
         <div class="ionic-stepper-vertical-content-container"
              [class.ionic-stepper-vertical-line]="!isLast">
